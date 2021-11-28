@@ -3,11 +3,12 @@ import { Typography, Row, Col, Statistic } from "antd";
 import millify from "millify";
 import { Link } from "react-router-dom";
 import { useGetCryptosQuery } from "../services/cryptoApi";
+import { News, Cryptocurrencies } from "../components/Imports";
 
 const { Title } = Typography;
 
 const Homepage = () => {
-    const { data, isFetching } = useGetCryptosQuery();
+    const { data, isFetching } = useGetCryptosQuery(12);
     const globalStats = data?.data?.stats;
 
     if (isFetching) return "Loading...";
@@ -15,14 +16,14 @@ const Homepage = () => {
 
     return (
         <>
-            <Title level={3} className="heading">
+            <Title level={2} className="heading">
                 Global Crypto Stats
             </Title>
             <Row>
                 <Col span={12}>
                     <Statistic
                         title="Total Cryptocurrencies"
-                        value={globalStats.total}
+                        value={millify(globalStats.total)}
                     ></Statistic>
                 </Col>
                 <Col span={12}>
@@ -50,6 +51,24 @@ const Homepage = () => {
                     ></Statistic>
                 </Col>
             </Row>
+            <div className="home-heading-container">
+                <Title level={2} className="home-title">
+                    Top 10 Cryptocurrencies
+                </Title>
+                <Title level={4} className="show-more">
+                    <Link to="/cryptocurrencies">Show More</Link>{" "}
+                </Title>
+            </div>
+            <Cryptocurrencies simplified />
+            <div className="home-heading-container">
+                <Title level={2} className="home-title">
+                    Lastest Crypto News
+                </Title>
+                <Title level={4} className="show-more">
+                    <Link to="/cryptocurrencies">Show More</Link>{" "}
+                </Title>
+            </div>
+            <News simplified />
         </>
     );
 };
