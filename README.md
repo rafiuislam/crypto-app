@@ -21,6 +21,10 @@
   ![React](https://img.shields.io/badge/-React-333333?style=flat&logo=react)
 
 <br/>
+<h3> 🛠 &nbsp;Setup Dependencies</h3>
+
+- 🔧 &nbsp;
+   npm i antd @ant-design/icons react-redux @reduxjs/toolkit axios chart.js html-react-parser millify moment react-chartjs-2 react-router-dom
 
 <a href="https://github.com/rafiuislam">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=rafiuislam&theme=buefy&show_icons=true" />
