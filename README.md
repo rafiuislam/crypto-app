@@ -17,7 +17,8 @@
   ![CSS](https://img.shields.io/badge/-CSS-333333?style=flat&logo=CSS3&logoColor=1572B6)
   ![JavaScript](https://img.shields.io/badge/-JavaScript-333333?style=flat&logo=javascript)
   ![AntDesign](https://img.shields.io/badge/-Ant%20Design-333333?style=flat&logo=antdesign&logoColor=563D7C)
-  ![Node.js](https://img.shields.io/badge/-Chart.js-333333?style=flat&logo=chart.js)
+  ![Chart.js](https://img.shields.io/badge/-Chart.js-333333?style=flat&logo=chart.js)
+  ![redux-toolkit](https://img.shields.io/badge/-redux%20toolkit-333333?style=flat&logo=redux&logoColor=563D7C)
   ![React](https://img.shields.io/badge/-React-333333?style=flat&logo=react)
 
 <br/>
