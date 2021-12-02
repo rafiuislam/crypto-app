@@ -21,6 +21,7 @@ a:hover {
     display: flex;
     flex-direction: row;
     overflow: hidden;
+    background-color: #001529;
 }
 
 .navbar {
@@ -375,4 +376,11 @@ a:hover {
     flex-direction: column;
     padding: 20px;
     align-items: center;
+}
+
+.ali {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }

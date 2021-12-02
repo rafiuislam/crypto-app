@@ -41,7 +41,6 @@ const App = () => {
                         </Routes>
                     </div>
                 </Layout>
-
                 <div className="footer">
                     <Typography.Title
                         level={5}
